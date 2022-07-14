@@ -1,0 +1,6 @@
+transformers
+pandas
+numpy
+datasets
+rdkit-pypi
+molsets

@@ -1,0 +1,6 @@
+{
+    "model_type": "roberta",
+    "max_position_embeddings": 514,
+    "type_vocab_size": 1,
+    "vocab_size": 10261
+}
