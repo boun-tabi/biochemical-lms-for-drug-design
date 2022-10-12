@@ -33,7 +33,7 @@ python src/molecular_training.py --model_name_or_path seyonec/PubChem10M_SMILES_
 Once training is completed, sample 30K molecules from ChemBERTaLM and benchmark it against MOSES
 
 ```bash
-python src/molecular_generation.py --model models/ChemBERTaLM
+python src/molecular_generation.py --model models/ChemBERTaLM --num_return_sequences 30000 --do_sample
 python src/molecular_evaluation.py --model models/ChemBERTaLM
 ```
 
