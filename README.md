@@ -91,12 +91,15 @@ python src/run_docking.py --target_pdb_id {PDB_ID} --ligand_id {ligand_ID} --mol
 
 ```
 @article{10.1093/bioinformatics/btac482,
-    author = {Uludoğan, Gökçe and Ozkirimli, Elif and Ulgen, Kutlu O. and Karalı, Nilgün Lütfiye and Özgür, Arzucan},
-    title = "{Exploiting Pretrained Biochemical Language Models for Targeted Drug Design}",
+    author = {Uludoğan, Gökçe and Ozkirimli, Elif and Ulgen, Kutlu O and Karalı, Nilgün and Özgür, Arzucan},
+    title = "{Exploiting pretrained biochemical language models for targeted drug design}",
     journal = {Bioinformatics},
+    volume = {38},
+    number = {Supplement_2},
+    pages = {ii155-ii161},
     year = {2022},
     doi = {10.1093/bioinformatics/btac482},
-    url = {https://doi.org/10.1093/bioinformatics/btac482}
+    url = {https://doi.org/10.1093/bioinformatics/btac482},
 }
 ```
 
