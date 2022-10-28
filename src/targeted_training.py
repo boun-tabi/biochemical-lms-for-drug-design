@@ -48,10 +48,6 @@ def process_data_to_model_inputs(batch):
     batch["decoder_attention_mask"] = outputs['attention_mask']
     batch["labels"] = outputs.input_ids.copy()
 
-    # because BERT automatically shifts the labels, the labels correspond exactly to `decoder_input_ids`.
-    # We have to make sure that the PAD token is ignored
-    # Lastly, it is very important to remember to ignore the loss of the padded labels. In 🤗Transformers this can be done by setting the label to -100.
-
     batch["labels"] = [[-100 if token == tgt_tokenizer.pad_token_id else token for token in labels] for labels in
                        batch["labels"]]
 
@@ -170,7 +166,7 @@ training_args = Seq2SeqTrainingArguments(
     gradient_accumulation_steps=args.gradient_accumulation_steps,
     load_best_model_at_end=True,
     # report_to='wandb',
-    no_cuda=True,
+    no_cuda=False,
     run_name=args.output_dir
 )
 
