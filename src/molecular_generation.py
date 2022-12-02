@@ -24,7 +24,7 @@ if __name__ == "__main__":
     parser.add_argument('--num_return_sequences', type=int, required=True)
     parser.add_argument('--do_sample', action='store_true')
     parser.add_argument('--top_k', type=int, default=0)
-    parser.add_argument('--max_length', type=int, default=None)
+    parser.add_argument('--max_length', type=int, default=128)
     parser.add_argument('--top_p', type=float)
     args = parser.parse_args()
     main(args) 
