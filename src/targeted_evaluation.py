@@ -38,7 +38,7 @@ def evaluate_predictions(generations, references, train, n_jobs=1):
 
 parser = ArgumentParser()
 parser.add_argument('--model', type=str, required=True)
-parser.add_argument('--train', type=str, required='data/splits/train_interactions.csv')
+parser.add_argument('--train', type=str, default='data/splits/train_interactions.csv')
 parser.add_argument('--test', type=str, default='data/splits/test_interactions.csv')
 parser.add_argument('--val', type=str, default='data/splits/val_interactions.csv')
 
